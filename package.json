@@ -1,0 +1,19 @@
+{
+    "name": "chemathon",
+    "version": "1.0.0",
+    "description": "For chemathon",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "Dhairya Patel",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.15.2",
+        "dotenv": "^8.2.0",
+        "express": "^4.14.0",
+        "mongodb": "^2.2.33",
+        "mongoose": "^4.5.9"
+    }
+}

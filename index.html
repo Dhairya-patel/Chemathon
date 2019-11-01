@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CHEMATHON</title>
+    <!-- <link href="favicon.ico" rel="shortcut icon" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate-css/animate.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/frontend-input.js"></script>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <section id="hero">
+        <div class="hero-container">
+            <div class="wow fadeIn">
+                <h1>CHEMATHON</h1>
+                <h2>
+                    <span class="rotating">Let's think deeper,Let's solve,Let's achieve</span
+            >
+          </h2>
+          <div class="actions">
+            <a href="#about" class="btn-services"> Rules </a>
+            <a href="#services" class="btn-services">Questions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <header id="header">
+      <div class="container">
+        <div class="pull-left">
+          <h2 id="navhead">CHEMATHON</h2>
+        </div>
+        <ul class="nav-menu"></ul>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li><a href="#about">Rules</a></li>
+            <li><a href="#services">Questions</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="sticky row " id="countdown">
+      <div class="col-md-5"></div>
+      <div class="col-md-2">
+        <br />
+        <center><p id="demo"></p></center>
+        <script>
+          var countDownDate = new Date("OCT 24, 2019 00:00:00").getTime();
+          var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor(
+              (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            var minutes = Math.floor(
+              (distance % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML =
+              hours + "H " + minutes + "M " + seconds + "S ";
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "Contest Ended";
+            }
+          }, 1000);
+        </script>
+      </div>
+      <div class="col-md-5"></div>
+    </div>
+    <section id="about">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <br />
+            <h3 class="section-title">Rules</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">
+              Following are the rules for the contest
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container wow fadeInUp">
+        <div class="row">
+          <div class="about-content">
+            <!-- <h2 class="about-title">We provide great services and ideass</h2> -->
+            <p class="about-text"></p>
+            <div>
+              <h3>Rules:</h3>
+              <p>
+                The problems for this competition are derived for various field
+                of undergraduate chemical engineering and will test your
+                understanding as engineer, computing and numerical skills
+              </p>
+              <ul>
+                <li>
+                  Round 1 consists of 5 questions to be solved within 24 hours.
+                </li>
+                <li>
+                  You need to first register for Round 1 by 1-11-2019 and get
+                  your access passcode. Round 1 will be held online and the link
+                  will be made active on a weekend and all the registered
+                  participants will be informed about the link and other details
+                  two days prior via Email.
+                </li>
+                <li>
+                  On the Online link portal you will be asked to provide
+                  specific parameter values in the question. The portal will
+                  give you a positive or negative feedback based on these
+                  parameter values. The feedback would be positive if the
+                  parameter value asked is within some range of expected answer
+                  and serves as a feedback for your code so that if the
+                  concerned value asked is way off you could rework on your
+                  program or concept.
+                </li>
+                <li>
+                  On the portal you are asked to provide a common ZIP file
+                  designed as follows:
+                  <ul>
+                    <li>
+                      1. It should have a base folder named this folder should
+                      contain 5 folders namely question 1, question 2 and so on.
+                      In each question folder you should have its code (if any)
+                      and a soft copy of solution.
+                    </li>
+                    <li>
+                      2. You can use only Turbo C++ 3.2/Python 3/Matlab/GNU
+                      Octave 4.4.1/MS Excel 2007 to solve the problem.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Result of all the qualified teams for second round will be
+                  notified via email.
+                </li>
+                <li>
+                  Round 2 and 3 will be held on the event day here at MNIT
+                  Jaipur.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Judging Criteria for 1st round:</h3>
+              <ul>
+                <li> Maximum number of questions solved.</li>
+                <li> Negative marking will not be there for first round.</li>
+                <li>
+                   Grading will be on the basis of maximum score achieved by
+                  the team. Any use of unfair means will lead to
+                  disqualification of team.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <br />
+            <h3 class="section-title">Ouestions</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 service-item">
+            <div class="service-icon"><i class="fa fa-desktop"></i></div>
+            <h4 class="service-title"><a href="">Question 1</a></h4>
+            <p class="service-description">
+              A football competition has just finished. The players have been
+              given points for scoring goals and points for committing fouls.
+              Now, it is up to Alex to find the best player in the tournament.
+              As a programmer, your job is to help Alex by telling him the
+              highest number of points achieved by some player. You are given
+              two sequences A1,A2,…,AN and B1,B2,…,BN. For each valid i, player
+              i scored Ai goals and committed Bi fouls. For each goal, the
+              player that scored it gets 20 points, and for each foul, 10 points
+              are deducted from the player that committed it. However, if the
+              resulting number of points of some player is negative, this player
+              will be considered to have 0 points instead. You need to calculate
+              the total number of points gained by each player and tell Alex the
+              maximum of these values.
+              <br />
+              The first line of the input contains a single integer T denoting
+              the number of test cases. The description of T test cases follows.
+              <br />
+              The first line of each test case contains a single integer N.<br />
+              The second line contains N space-separated integers A1,A2,…,AN.<br />
+              The third line contains N space-separated integers B1,B2,…,BN.<br />
+            </p>
+            <form>
+              <label >Your answer</label>
+              <div class=" form-group  row">
+                <div class="col-xs-10">
+                  <input
+                    class="form-control"
+                    id="ans1"
+                    placeholder="Enter any number"
+                  />
+                </div>
+                <div class="col-xs-2">
+                  <input type="submit" class="btn btn-primary form-control" onclick="c1(event)" />
+                </div>
+               
+              </div>
+            </form>
+            <div class="container res" id="res1" ></div>
+            <hr />
+          </div>
+          <div class="col-12 service-item">
+            <div class="service-icon"><i class="fa fa-desktop"></i></div>
+            <h4 class="service-title"><a href="">Question 2</a></h4>
+            <p class="service-description">
+              A football competition has just finished. The players have been
+              given points for scoring goals and points for committing fouls.
+              Now, it is up to Alex to find the best player in the tournament.
+              As a programmer, your job is to help Alex by telling him the
+              highest number of points achieved by some player. You are given
+              two sequences A1,A2,…,AN and B1,B2,…,BN. For each valid i, player
+              i scored Ai goals and committed Bi fouls. For each goal, the
+              player that scored it gets 20 points, and for each foul, 10 points
+              are deducted from the player that committed it. However, if the
+              resulting number of points of some player is negative, this player
+              will be considered to have 0 points instead. You need to calculate
+              the total number of points gained by each player and tell Alex the
+              maximum of these values.
+              <br />
+              The first line of the input contains a single integer T denoting
+              the number of test cases. The description of T test cases follows.
+              <br />
+              The first line of each test case contains a single integer N.<br />
+              The second line contains N space-separated integers A1,A2,…,AN.<br />
+              The third line contains N space-separated integers B1,B2,…,BN.<br />
+            </p>
+            <form>
+              <label for="exampleFormControlInput1">Your answer</label>
+              <div class=" form-group  row">
+                <div class="col-xs-10">
+                  <input
+                    class="form-control"
+                    id="ans2"
+                    placeholder="Enter any number"
+                  />
+                </div>
+                <div class="col-xs-2">
+                  <input type="submit" class="btn btn-primary form-control" onclick="c2(event)"/>
+                </div>
+                
+              </div>
+            </form>
+            <div class="container res" id="res2"></div>
+            <hr />
+          </div>
+          <div class="col-12 service-item">
+            <div class="service-icon"><i class="fa fa-desktop"></i></div>
+            <h4 class="service-title"><a href="">Question 3</a></h4>
+            <p class="service-description">
+              A football competition has just finished. The players have been
+              given points for scoring goals and points for committing fouls.
+              Now, it is up to Alex to find the best player in the tournament.
+              As a programmer, your job is to help Alex by telling him the
+              highest number of points achieved by some player. You are given
+              two sequences A1,A2,…,AN and B1,B2,…,BN. For each valid i, player
+              i scored Ai goals and committed Bi fouls. For each goal, the
+              player that scored it gets 20 points, and for each foul, 10 points
+              are deducted from the player that committed it. However, if the
+              resulting number of points of some player is negative, this player
+              will be considered to have 0 points instead. You need to calculate
+              the total number of points gained by each player and tell Alex the
+              maximum of these values.
+              <br />
+              The first line of the input contains a single integer T denoting
+              the number of test cases. The description of T test cases follows.
+              <br />
+              The first line of each test case contains a single integer N.<br />
+              The second line contains N space-separated integers A1,A2,…,AN.<br />
+              The third line contains N space-separated integers B1,B2,…,BN.<br />
+            </p>
+            <form>
+              <label for="exampleFormControlInput1">Your answer</label>
+              <div class=" form-group  row">
+                <div class="col-xs-10">
+                  <input
+                    class="form-control"
+                    id="ans3"
+                    placeholder="Enter any number"
+                  />
+                </div>
+                <div class="col-xs-2">
+                  <input type="submit" class="btn btn-primary form-control" onclick="c3(event)"/>
+                </div>
+                
+              </div>
+            </form>
+            <div class="container res" id="res3"></div>
+            <hr />
+          </div>
+          <div class="col-12 service-item">
+            <div class="service-icon"><i class="fa fa-desktop"></i></div>
+            <h4 class="service-title"><a href="">Question 4</a></h4>
+            <p class="service-description">
+              A football competition has just finished. The players have been
+              given points for scoring goals and points for committing fouls.
+              Now, it is up to Alex to find the best player in the tournament.
+              As a programmer, your job is to help Alex by telling him the
+              highest number of points achieved by some player. You are given
+              two sequences A1,A2,…,AN and B1,B2,…,BN. For each valid i, player
+              i scored Ai goals and committed Bi fouls. For each goal, the
+              player that scored it gets 20 points, and for each foul, 10 points
+              are deducted from the player that committed it. However, if the
+              resulting number of points of some player is negative, this player
+              will be considered to have 0 points instead. You need to calculate
+              the total number of points gained by each player and tell Alex the
+              maximum of these values.
+              <br />
+              The first line of the input contains a single integer T denoting
+              the number of test cases. The description of T test cases follows.
+              <br />
+              The first line of each test case contains a single integer N.<br />
+              The second line contains N space-separated integers A1,A2,…,AN.<br />
+              The third line contains N space-separated integers B1,B2,…,BN.<br />
+            </p>
+            <form>
+              <label for="exampleFormControlInput1">Your answer</label>
+              <div class=" form-group  row">
+                <div class="col-xs-10">
+                  <input
+                    class="form-control"
+                    id="ans4"
+                    placeholder="Enter any number"
+                  />
+                </div>
+                <div class="col-xs-2">
+                  <input type="submit" class="btn btn-primary form-control" onclick="c4(event)" />
+                </div>
+              </div>
+            </form>
+            <div class="container res" id="res4"></div>
+            <hr />
+          </div>
+          <div class="col-12 service-item">
+            <div class="service-icon"><i class="fa fa-desktop"></i></div>
+            <h4 class="service-title"><a href="">Question 5</a></h4>
+            <p class="service-description">
+              A football competition has just finished. The players have been
+              given points for scoring goals and points for committing fouls.
+              Now, it is up to Alex to find the best player in the tournament.
+              As a programmer, your job is to help Alex by telling him the
+              highest number of points achieved by some player. You are given
+              two sequences A1,A2,…,AN and B1,B2,…,BN. For each valid i, player
+              i scored Ai goals and committed Bi fouls. For each goal, the
+              player that scored it gets 20 points, and for each foul, 10 points
+              are deducted from the player that committed it. However, if the
+              resulting number of points of some player is negative, this player
+              will be considered to have 0 points instead. You need to calculate
+              the total number of points gained by each player and tell Alex the
+              maximum of these values.
+              <br />
+              The first line of the input contains a single integer T denoting
+              the number of test cases. The description of T test cases follows.
+              <br />
+              The first line of each test case contains a single integer N.<br />
+              The second line contains N space-separated integers A1,A2,…,AN.<br />
+              The third line contains N space-separated integers B1,B2,…,BN.<br />
+            </p>
+            <form>
+              <label for="exampleFormControlInput1">Your answer</label>
+              <div class=" form-group  row">
+                <div class="col-xs-10">
+                  <input
+                    class="form-control"
+                    id="ans5"
+                    placeholder="Enter any number"
+                  />
+                </div>
+                <div class="col-xs-2">
+                  <input type="submit" class="btn btn-primary form-control" onclick="c5(event)" />
+                </div>
+              </div>
+            </form>
+            <div class="container res" id="res5"></div> 
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title" id="con">Contact Us</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">
+              Yet to be Displayed
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="credits">
+              Developed by Satya, Keshav and Dhairya
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/morphext/morphext.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/stickyjs/sticky.js"></script>
+    <script src="lib/easing/easing.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
