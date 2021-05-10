@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 let app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect(process.env.MONGODB_URI);
 console.log('Connected');
 
 let inputObj;
